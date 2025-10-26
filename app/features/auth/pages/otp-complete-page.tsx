@@ -1,6 +1,6 @@
 import { Form, redirect, useNavigation, useSearchParams } from "react-router";
 import type { Route } from "./+types/otp-complete-page";
-import { InputPair } from "~/common/components/input-pair";
+import InputPair from "~/common/components/input-pair";
 import { Button } from "~/common/components/ui/button";
 import { z } from "zod";
 import { makeSSRClient } from "~/supa-client";
