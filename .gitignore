@@ -5,3 +5,4 @@
 /.react-router/
 /build/
 .env
+/react-email-starter/node_modules

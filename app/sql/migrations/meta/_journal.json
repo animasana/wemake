@@ -43,6 +43,13 @@
       "when": 1761484478165,
       "tag": "0005_absent_sunfire",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1761660098622,
+      "tag": "0006_narrow_veda",
+      "breakpoints": true
     }
   ]
 }

@@ -244,3 +244,20 @@ export const getReviews = async (
 
     return data;
 }
+
+export const getPromotions = async (client: SupabaseClient<Database>) => {
+    const { data, error } = await client
+        .from("products")
+        .select(`
+            name,
+            description   
+        `)        
+        .order("name", { ascending: true });
+
+    if (error) {
+        console.error("Failed to fetch reviews: ", error);
+        throw new Error("Failed to fetch reviews");
+    }
+
+    return data;
+}

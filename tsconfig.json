@@ -4,7 +4,8 @@
     "**/.server/**/*",
     "**/.client/**/*",
     ".react-router/types/**/*",
-    "database.types.ts"
+    "database.types.ts",
+    "react-email-starter",
   ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
@@ -16,6 +17,7 @@
     "rootDirs": [".", "./.react-router/types"],    
     "paths": {
       "~/*": ["./app/*"],
+      "react-email-starter/*": ["./react-email-starter/*"],
       "@db": ["./database.types"]
     },
     "esModuleInterop": true,
@@ -24,5 +26,5 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
-  }  
+  }    
 }
