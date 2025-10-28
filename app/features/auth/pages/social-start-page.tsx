@@ -13,7 +13,7 @@ export const loader = async ({ params, request }: Route.LoaderArgs) => {
         return redirect("/auth/login");
     }
     const { provider } = data;
-    const redirectTo = `http://GiGSoft.xyz/auth/social/${provider}/complete`;
+    const redirectTo = `https://GiGSoft.xyz/auth/social/${provider}/complete`;
     const { client, headers } = makeSSRClient(request);
     
     const { 
